@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenfield Institute of Technology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">Greenfield College</div>
+    <nav id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#notices">Notice Board</a>
+      <a href="#admission">Admission</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Shaping Tomorrow's Innovators</h1>
+    <p>Admissions open for the 2026–2027 academic session across Engineering, Science, and Management.</p>
+    <a href="#admission" class="btn">Apply Now</a>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="container">
+    <h2>Popular Programs</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>B.Tech Computer Science</h3>
+        <p>4-year undergraduate program focusing on AI, Web Development, and Data Structures.</p>
+      </div>
+      <div class="card">
+        <h3>Bachelor of Business (BBA)</h3>
+        <p>3-year program building core skills in finance, marketing, and entrepreneurship.</p>
+      </div>
+      <div class="card">
+        <h3>B.Sc. Data Science</h3>
+        <p>3-year degree covering statistical modeling, machine learning, and big data analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Board Section -->
+  <section id="notices" class="container bg-light">
+    <h2>Campus Notice Board</h2>
+    <ul id="notice-list" class="notice-list">
+      <li><strong>Nov 18:</strong> Semester examination timetable published on the student portal.</li>
+      <li><strong>Nov 12:</strong> Annual Tech Fest registrations close this Friday.</li>
+      <li><strong>Nov 05:</strong> Scholarship applications open for first-year merit students.</li>
+    </ul>
+  </section>
+
+  <!-- Admission Inquiry Form -->
+  <section id="admission" class="container">
+    <h2>Admission Inquiry</h2>
+    <form id="inquiry-form" class="form-box">
+      <input type="text" id="student-name" placeholder="Full Name" required />
+      <input type="email" id="student-email" placeholder="Email Address" required />
+      <select id="course-select" required>
+        <option value="">Select Desired Course</option>
+        <option value="B.Tech Computer Science">B.Tech Computer Science</option>
+        <option value="BBA">Bachelor of Business (BBA)</option>
+        <option value="B.Sc. Data Science">B.Sc. Data Science</option>
+      </select>
+      <button type="submit" class="btn">Submit Inquiry</button>
+    </form>
+    <p id="form-feedback" class="feedback"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Greenfield Institute of Technology. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
